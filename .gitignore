@@ -1,0 +1,10 @@
+AppDir
+boilerplate
+appimagetool.AppImage
+dist
+neutralinojs.log
+.tmp
+resources
+
+vue-src/node_modules
+vue-src/package-lock.json

@@ -1,0 +1,54 @@
+{
+	"$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
+	"applicationId": "js.neutralino.sample",
+	"version": "1.0.0",
+	"defaultMode": "window",
+	"port": 0,
+	"documentRoot": "/resources",
+	"url": "/",
+	"enableServer": true,
+	"enableNativeAPI": true,
+	"tokenSecurity": "one-time",
+	"logging": {
+		"enabled": true,
+		"writeToLogFile": false
+	},
+	"nativeAllowList": [
+		"app.*",
+		"window.*"
+	],
+	"modes": {
+		"window": {
+			"title": "Boilerplate",
+			"width": 800,
+			"height": 500,
+			"minWidth": 400,
+			"minHeight": 200,
+			"center": true,
+			"fullScreen": false,
+			"alwaysOnTop": false,
+			"icon": "/resources/logo.png",
+			"enableInspector": false,
+			"borderless": false,
+			"maximize": false,
+			"hidden": false,
+			"resizable": true,
+			"exitProcessOnClose": false
+			
+		}
+	},
+	"cli": {
+		"binaryName": "boilerplate",
+		"resourcesPath": "/resources",
+		"extensionsPath": "/extensions/",
+		"binaryVersion": "6.2.0",
+		"clientVersion": "6.2.0",
+		"frontendLibrary": {
+			"patchFile": "/vue-src/index.html",
+			"devUrl": "http://localhost:5173",
+			"projectPath": "/vue-src/",
+			"devCommand": "BROWSER=none npm run dev",
+			"buildCommand": "npm run build"
+		}
+	}
+}
