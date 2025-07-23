@@ -8,3 +8,4 @@ resources
 
 vue-src/node_modules
 vue-src/package-lock.json
+vue-src/src/assets/main.css

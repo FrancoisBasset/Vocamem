@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+button, router-link {
+    @apply cursor-pointer rounded-xl;
+}

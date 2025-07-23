@@ -1,11 +1,16 @@
 <template>
-	<div>
-		<div>Mot en cours : {{ wordsStore.steps[0] }}</div>
-		<br />
+	<div class="flex flex-col gap-4">
+		<router-link to="/">
+			<button class="bg-amber-200 m-3 p-3">Menu</button>
+		</router-link>
 
-		<div>
-			<button @click="check('old')">Déjà-vu</button>
-			<button @click="check('new')">Nouveau</button>
+		<div class="flex flex-col items-center">
+			<label class="text-3xl">{{ wordsStore.steps[0] }}</label>
+
+			<div class="flex gap-4">
+				<button @click="check('old')" class="bg-blue-300 p-5">Déjà-vu</button>
+				<button @click="check('new')" class="bg-teal-300 p-5">Nouveau</button>
+			</div>
 		</div>
 	</div>
 </template>
