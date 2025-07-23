@@ -1,9 +1,6 @@
 <template>
-	<Counter />
-	<Off />
+	<div>
+		<h1>Vocamem</h1>
+		<router-link to="/nouveau-jeu">Nouveau jeu</router-link>
+	</div>
 </template>
-
-<script setup>
-import Counter from '@/components/Counter.vue';
-import Off from '@/components/Off.vue';
-</script>
