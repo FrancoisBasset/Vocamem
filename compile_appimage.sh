@@ -9,19 +9,19 @@ chmod u+x appimagetool.AppImage
 mkdir -p AppDir/usr/bin
 echo "[Desktop Entry]
 Type=Application
-Name=Boilerplate
-Exec=boilerplate
+Name=Vocamem
+Exec=vocamem
 Icon=logo
-Categories=Utility;" > AppDir/boilerplate.desktop
+Categories=Utility;" > AppDir/vocamem.desktop
 
 echo '#!/bin/bash
-exec $APPDIR/usr/bin/boilerplate' > AppDir/AppRun
+exec $APPDIR/usr/bin/vocamem' > AppDir/AppRun
 chmod u+x AppDir/AppRun
 
-cp dist/boilerplate/boilerplate-linux_x64 AppDir/usr/bin/boilerplate
-cp dist/boilerplate/resources.neu AppDir/usr/bin
+cp dist/vocamem/vocamem-linux_x64 AppDir/usr/bin/vocamem
+cp dist/vocamem/resources.neu AppDir/usr/bin
 
 cp vue-src/public/logo.png AppDir
 
-./appimagetool.AppImage AppDir boilerplate
-chmod u+x boilerplate
+./appimagetool.AppImage AppDir vocamem
+chmod u+x vocamem

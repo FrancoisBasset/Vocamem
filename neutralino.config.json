@@ -19,7 +19,7 @@
 	],
 	"modes": {
 		"window": {
-			"title": "Boilerplate",
+			"title": "Vocamem",
 			"width": 800,
 			"height": 500,
 			"minWidth": 400,
@@ -38,7 +38,7 @@
 		}
 	},
 	"cli": {
-		"binaryName": "boilerplate",
+		"binaryName": "vocamem",
 		"resourcesPath": "/resources",
 		"extensionsPath": "/extensions/",
 		"binaryVersion": "6.2.0",
