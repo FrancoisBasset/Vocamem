@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
-button, router-link {
-    @apply cursor-pointer rounded-xl;
+button,
+router-link {
+	@apply cursor-pointer rounded-xl;
 }

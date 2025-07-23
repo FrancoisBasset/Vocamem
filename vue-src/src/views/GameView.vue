@@ -1,8 +1,6 @@
 <template>
 	<div class="flex flex-col gap-4">
-		<router-link to="/">
-			<button class="bg-amber-200 m-3 p-3">Menu</button>
-		</router-link>
+		<MenuButton />
 
 		<div class="flex flex-col items-center">
 			<label class="text-3xl">{{ wordsStore.steps[0] }}</label>
@@ -16,9 +14,11 @@
 </template>
 
 <script>
+import MenuButton from '@/components/MenuButton.vue';
 import useWords from '@/stores/words';
 
 export default {
+	components: { MenuButton },
 	setup: () => ({
 		wordsStore: useWords()
 	}),
