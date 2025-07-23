@@ -19,3 +19,6 @@ Neutralino.init();
 Neutralino.events.on('windowClose', () => {
 	Neutralino.app.killProcess();
 });
+window.addEventListener('contextmenu', e => {
+	e.preventDefault();
+});
