@@ -25,8 +25,6 @@ export default defineStore('words', {
 				words.splice(index, 1);
 			}
 
-			console.log(this.newWords);
-
 			this.steps = [];
 
 			for (let i = 0; i < 50; i++) {
@@ -34,6 +32,8 @@ export default defineStore('words', {
 
 				this.steps.push(this.newWords[index]);
 			}
+
+			this.errors = 0;
 		},
 		nextStep() {
 			if (!this.oldWords.includes(this.steps[0])) {
