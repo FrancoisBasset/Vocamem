@@ -36,15 +36,15 @@ export default defineStore('words', {
 			this.errors = 0;
 		},
 		nextStep() {
-			if (!this.oldWords.includes(this.steps[0])) {
-				this.oldWords.push(this.steps[0]);
-				this.newWords = this.newWords.filter(w => w !== this.steps[0]);
+			if (!this.oldWords.includes(this.current)) {
+				this.oldWords.push(this.current);
+				this.newWords = this.newWords.filter(w => w !== this.current);
 			}
 
 			this.steps.splice(0, 1);
 		},
 		check(response) {
-			if ((response === 'new' && this.oldWords.includes(this.steps[0])) || (response === 'old' && this.newWords.includes(this.steps[0]))) {
+			if ((response === 'new' && this.oldWords.includes(this.current)) || (response === 'old' && this.newWords.includes(this.current))) {
 				this.errors++;
 			}
 		}

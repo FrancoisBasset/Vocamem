@@ -7,7 +7,9 @@
 
 			<label>{{ wordsStore.steps.length }} mots restants</label>
 
-			<label v-if="wordsStore.errors > 0"><span class="text-red-500 font-bold">{{ wordsStore.errors }}</span> erreurs</label>
+			<label v-if="wordsStore.errors > 0">
+				<span class="text-red-500 font-bold">{{ wordsStore.errors }}</span> erreurs
+			</label>
 
 			<div class="flex gap-4">
 				<button @click="check('old')" class="bg-blue-300 p-5">Déjà-vu</button>
