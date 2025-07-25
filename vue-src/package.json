@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "concurrently 'npm run buildcss -- --watch' 'vite'",
-		"build": "vite build",
+		"build": "concurrently 'npm run buildcss' 'vite build'",
 		"preview": "vite preview",
 		"buildcss": "tailwindcss -i src/input.css -o src/assets/main.css",
 		"format": "prettier --write ."
